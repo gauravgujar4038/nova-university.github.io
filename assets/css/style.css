@@ -1,0 +1,46 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{color:#333;background:#fff;line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+img{width:100%;border-radius:10px;display:block;}
+
+.container{width:90%;max-width:1200px;margin:auto;}
+.navbar{background:#0044cc;color:#fff;position:sticky;top:0;z-index:999;}
+.nav-container{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;}
+.logo{font-weight:800;font-size:1.5rem;color:#fff;}
+.logo span{color:#ffd500;}
+nav ul{display:flex;gap:1.5rem;}
+nav a{color:#fff;font-weight:500;}
+nav a.active,nav a:hover{color:#ffd500;}
+#menu-toggle{display:none;background:none;border:none;color:#fff;font-size:1.4rem;}
+
+.hero{background:#eef3ff;padding:4rem 0;}
+.hero-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center;gap:2rem;}
+.hero-text h1{font-size:2.5rem;color:#002080;}
+.btn{background:#0044cc;color:#fff;padding:0.8rem 1.5rem;border-radius:5px;display:inline-block;margin-top:1rem;}
+.btn:hover{background:#0033aa;}
+
+.section-title{text-align:center;font-size:2rem;margin-bottom:1rem;color:#002080;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
+.card{background:#fff;padding:1rem;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);text-align:center;}
+.card h3{margin-top:1rem;color:#0044cc;}
+
+.campus{background:#f7faff;padding:3rem 0;text-align:center;}
+.campus-card h4{margin-top:0.5rem;color:#002080;}
+.testimonials{padding:3rem 0;}
+.testimonial-grid{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+.testimonial{background:#eef3ff;padding:1.5rem;border-radius:10px;font-style:italic;}
+.cta{background:#0044cc;color:#fff;text-align:center;padding:2rem;}
+.cta .btn{background:#fff;color:#0044cc;margin-top:1rem;}
+
+.footer{background:#002080;color:#fff;text-align:center;padding:1rem 0;margin-top:2rem;}
+.footer .socials a{color:#ffd500;margin:0 5px;font-size:1.2rem;}
+.page-hero{background:#eef3ff;text-align:center;padding:3rem 1rem;color:#002080;}
+.contact-form form{display:flex;flex-direction:column;gap:1rem;max-width:600px;margin:auto;padding:2rem;}
+.contact-form input,.contact-form textarea{padding:0.8rem;border:1px solid #ccc;border-radius:5px;width:100%;}
+.contact-form button{align-self:center;}
+
+@media(max-width:768px){
+  nav ul{flex-direction:column;background:#0044cc;position:absolute;top:60px;right:0;width:200px;display:none;}
+  nav ul.active{display:flex;}
+  #menu-toggle{display:block;}
+}
